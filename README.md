@@ -1,9 +1,28 @@
-# Chapter-9
+# Example-4
 
-Code and examples for Chapter 9 of [Bootstrapping Microservices](https://www.bootstrapping-microservices.com/).
+This example demonstrates end to end testing a microservice with Cypress.
 
-In chapter 9 you learn various ways to test microservices.
+First you must boot the microservices application:
 
-Please see README in each sub-directory for instructions on starting the particular example.
+```bash
+docker-compose up --build
+```
 
-[Click here to support my work](https://www.codecapers.com.au/about#support-my-work)
+Now install dependencies for testing:
+
+```bash
+cd example-4
+npm install
+```
+
+Then run headless Cypress tests:
+
+```bash
+npm test
+```
+
+Or to show the Cypress UI:
+
+```bash
+npm run test:watch
+```
